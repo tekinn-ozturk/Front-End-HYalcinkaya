@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <!-- ORDER -> tüm elemanların default değeri 0 dır. -1,-2,-3 herhangi bir negatif değer yaparsan o elemanı sola | herhangi bir pozitif değer yaparsan o elemanı sağa alırsın.  -->
+<style>
+  main{
+    background-color: lightgray;
+    width: 800px;
+    display: flex;
+    margin: 0 auto;
+    padding:20px;
+  }
+
+  @media (max-width: 575px){
+    
+    main{
+      
+      flex-direction: column;
+      
+    }
+
+    aside{
+      order: 1;
+    }
+  }
+</style>
+<body>
+  <main class="container">
+    <aside>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="">Lorem.</a></li>
+        <li><a href="">Vel.</a></li>
+        <li><a href="">Amet?</a></li>
+        <li><a href="">A.</a></li>
+        <li><a href="">Possimus.</a></li>
+      </ul>
+    </aside>
+
+    <section>
+      <article>
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, et!</p>
+        <p>Quibusdam vero voluptatibus expedita repellendus a tempora nemo amet cumque?</p>
+        <p>Alias at ad, deserunt nisi fugit in id. Libero, quas.</p>
+      </article>
+      <article>
+        <h2>Fuga, voluptas?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, ratione.</p>
+        <p>A at quidem labore eaque ducimus unde quasi id perferendis.</p>
+        <p>Amet tempora quia voluptatum consequatur et qui sequi nesciunt ipsa!</p>
+      </article>
+      <article>
+        <h2>Fugiat, porro.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, repellat.</p>
+        <p>Eius recusandae reprehenderit ex explicabo labore itaque asperiores quasi at.</p>
+        <p>Quia praesentium voluptate optio molestiae enim soluta reprehenderit blanditiis a?</p>
+      </article>
+      <article>
+        <h2>Facilis, sunt!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nesciunt.</p>
+        <p>Maxime similique alias fuga repellat, illo quae eveniet debitis quibusdam.</p>
+        <p>Maxime magni earum, nobis excepturi soluta ipsa. Magnam, eligendi id?</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

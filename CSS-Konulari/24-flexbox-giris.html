@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --green: #2ecc71;
+        --blue: #3498db;
+        --yellow: #f1c40f;
+        --red: #e74c3c;
+        --dark-blue: #34495e;
+        --midnight-blue: #2c3e50;
+        --light-white: #ecf0f1;
+        --silver: #bdc3c7;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: var(--silver);
+      }
+      .flex-container {
+        width: 800px;
+        margin: auto;
+        background: var(--light-white);
+        display: flex;
+        flex-direction: column;
+      }
+      nav {
+        background-color: var(--dark-blue);
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      ul {
+        /* flex-direction defaultta row olarak tanımlı. */
+        
+        width: 800px;
+        
+        margin: 0 auto 10px;
+
+        display: flex;
+        justify-content:space-evenly;
+
+        list-style: none;
+      }
+
+      ul > li > a {
+        color: var(--light-white);
+      }
+      .item {
+        background: var(--yellow);
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Lorem.</a></li>
+        <li><a href="">Non!</a></li>
+        <li><a href="">Nesciunt!</a></li>
+        <li><a href="">Sequi.</a></li>
+        <li><a href="">Odio.</a></li>
+        <li><a href="">Ipsa.</a></li>
+        <li><a href="">Leman.</a></li>
+        <li><a href="">Ipsa.</a></li>
+        <li><a href="">Essen.</a></li>
+        <li><a href="">Turco.</a></li>
+      </ul>
+    </nav>
+    <div class="flex-container">
+      <div class="item">Lorem.</div>
+      <div class="item">Natus.</div>
+      <div class="item">Quisquam.</div>
+      <div class="item">Aspernatur.</div>
+    </div>
+  </body>
+</html>

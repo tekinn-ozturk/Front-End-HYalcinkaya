@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+  <style>
+    /* html{
+      height: 100vh;
+    } */
+    body{
+      margin: 0;
+      height: 100vh;
+    }
+    nav{
+      padding: 5px;
+      background-color: bisque;
+    }
+    ul{
+      list-style: none;
+      
+
+    }
+    ul.menu{
+      display:flex;
+    }
+
+    ul.menu>li{
+      margin-right:10px ;
+    }
+
+    .dropdown-menu{
+      position: fixed;
+      display:none;
+      padding: 20px;
+      
+    }
+
+    .dropdown-menu>li{
+      padding:6px;
+    }
+    .category{
+      margin-top:0;
+      margin-left: -7px;
+      
+    }
+    .open{
+      display:block;
+      background-color:brown;
+    }
+
+    .dropdown-menu{
+      border-radius: 30px;
+      height: 100px;
+      width: 200px;
+      
+      
+      
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <ul class="menu">
+      <li>Ana Sayfa</li>
+      <li class="dropdown">Kategori <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg>
+      <ul class="dropdown-menu">
+        <li class="card">Bilgisayar</li>
+        <li class="card">Tablet</li>
+        <li class="card">Cep Telefonu</li>
+      </ul>
+        </li>
+        <li class="dropdown">Ürünler <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+        <ul class="dropdown-menu">
+          <li class="card">Samsung</li>
+          <li class="card">LG</li>
+          <li class="card">Asus Telefonu</li>
+        </ul>
+          </li>
+      <li>İletişim</li>
+    
+    </ul>
+  </nav>
+
+  <div>
+    <h3>Selam</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium minima delectus reiciendis, tempore quis ullam magnam molestiae quia explicabo non, sint deleniti repellendus beatae atque dolor recusandae quod illum.</p>
+  </div>
+  <div>
+    <h3>Selam</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium minima delectus reiciendis, tempore quis ullam magnam molestiae quia explicabo non, sint deleniti repellendus beatae atque dolor recusandae quod illum.</p>
+  </div>
+  <div>
+    <h3>Selam</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium minima delectus reiciendis, tempore quis ullam magnam molestiae quia explicabo non, sint deleniti repellendus beatae atque dolor recusandae quod illum.</p>
+  </div>
+  <div>
+    <h3>Selam</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium minima delectus reiciendis, tempore quis ullam magnam molestiae quia explicabo non, sint deleniti repellendus beatae atque dolor recusandae quod illum.</p>
+  </div>
+ 
+   
+  <script>
+    const dropDownItems= document.querySelectorAll(".dropdown"); //Sayfada bulunan tüm dropdown yapıları sectik.
+    console.log(dropDownItems); //öylesine yazdırdım.
+    //foreach ile bu secilen ögeleri tek tek dolanacağım.
+    dropDownItems.forEach(item=>{
+      //bu dropdown yapılarına click yapıldığında ne yapılması gerekiyor.
+      //1-açılacak olan yapıyı seç(.dropdown-menu)
+      //2-toggle'la
+      item.addEventListener('click',()=>{
+      //her bir itemin ayrı ayrı .dropdown-menu'sune ulaşman gerek.
+        const dropDownMenu= item.querySelector(".dropdown-menu");
+        dropDownMenu.classList.toggle('open');
+      })
+    });
+
+    //Başka bir yere tıklanınca açılır menuler kapansın.
+    document.body.addEventListener('click',(event) =>{
+      console.log(event.target);
+      dropDownItems.forEach(item=>{
+      const dropDownMenu= item.querySelector(".dropdown-menu");
+      const cards  = item.querySelectorAll(".card")
+       
+        if(event.target != dropDownMenu && event.target != item )
+        dropDownMenu.classList.remove('open');
+      
+       })
+      })
+    
+  </script>
+    
+  
+</body>
+
+
+</html>

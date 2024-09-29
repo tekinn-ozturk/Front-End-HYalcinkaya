@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --green: #2ecc71;
+        --blue: #3498db;
+        --yellow: #f1c40f;
+        --red: #e74c3c;
+        --dark-blue: #34495e;
+        --midnight-blue: #2c3e50;
+        --light-white: #ecf0f1;
+        --silver: #bdc3c7;
+      }
+      .container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        /* ekranın görünen yüzü kadar bir yükseklik verir */
+        height:100vh; 
+
+
+
+        
+      }
+      .login {
+        background-color: var(--light-white);
+        border-radius: 20px;
+        width: 600px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      body{
+        background-color: #2ecc71;
+      }
+
+      .login>input{
+        margin-bottom: 5px;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login">
+        <h2>Giriş Ekranı</h2>
+        <input type="text" placeholder="Username" />
+        <input type="password" name="" id="" placeholder="Password" />
+        <button type="submit">Giriş Yap</button>
+      </div>
+    </div>
+  </body>
+</html>

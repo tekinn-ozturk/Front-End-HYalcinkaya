@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .btn {
+        display: inline-block;
+
+        padding: 8px 16px;
+        /* yukardan aşağıdan 8px - sağdan soldan 12px */
+        border-radius: 4px;
+        text-decoration: none;
+        /* yazının altındaki çizgiyi kaldırdı */
+      }
+
+      .mt-10 {
+        margin-top: 10px;
+      }
+
+      .btn-primary {
+        background-color: #706fd3;
+      }
+
+      .btn-primary:hover {
+        background-color: #2c2c54;
+      }
+
+      .menu > li > ul {
+        display: none;
+      }
+
+      .menu > li:hover {
+        background-color: red;
+      }
+
+      .menu > li:hover > ul {
+        display: block;
+        
+      }
+      /* ilgili li elementine geldiğinde gizlenen bilgi açılır */
+
+      /* .menu:hover>li>ul{
+        display:block;
+        
+      } */
+      /* ul'nin herhangi bir yerine geldiğinde çat direkt gizlenen bilgi açılır */
+      ul.menu>li:hover:nth-child(2){
+        background-color: purple;
+      }
+
+      ul.menu>li:hover:nth-child(3){
+        background-color: olive;
+      }
+
+      ul.menu>li:hover:nth-child(4){
+        background-color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="mt-10">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, vitae?
+    </p>
+    <a href="#" class="btn btn-primary">İncele</a>
+    <ul class="menu">
+      <li>
+        Lorem.
+        <ul class="drop-down">
+          <li><a href="">Lorem.</a></li>
+          <li><a href="">Ipsam.</a></li>
+          <li><a href="">Nulla.</a></li>
+        </ul>
+      </li>
+      <li>Fuga.</li>
+      <li>Quisquam?</li>
+      <li>Eveniet.</li>
+      <li>Atque!</li>
+      <li>Cumque?</li>
+      <li>Omnis.</li>
+    </ul>
+  </body>
+</html>

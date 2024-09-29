@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+  <style>
+    body{
+      margin: 0;
+    }
+    nav{
+      padding: 5px;
+      background-color: bisque;
+    }
+    ul{
+      list-style: none;
+      
+
+    }
+    ul.menu{
+      display:flex;
+    }
+
+    ul.menu>li{
+      margin-right:10px ;
+    }
+
+    .dropdown-menu{
+      position: fixed;
+      display:none;
+      padding: 20px;
+      
+    }
+
+    .dropdown-menu>li{
+      padding:6px;
+    }
+    .category{
+      margin-top:0;
+      margin-left: -7px;
+      
+    }
+    .open{
+      display:block;
+      background-color:brown;
+    }
+
+    .dropdown-menu{
+      border-radius: 30px;
+      height: 100px;
+      width: 200px;
+      
+      
+      
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <ul class="menu">
+      <li>Ana Sayfa</li>
+      <li class="dropdown">Kategori <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg>
+      <ul class="dropdown-menu category">
+        <li>Bilgisayar</li>
+        <li>Tablet</li>
+        <li>Cep Telefonu</li>
+      </ul>
+        </li>
+        <li class="dropdown">Ürünler <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+        <ul class="dropdown-menu product">
+          <li>Samsung</li>
+          <li>LG</li>
+          <li>Asus Telefonu</li>
+        </ul>
+          </li>
+      <li>İletişim</li>
+    
+    </ul>
+  </nav>
+
+  <div>
+    <h3>Selam</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium minima delectus reiciendis, tempore quis ullam magnam molestiae quia explicabo non, sint deleniti repellendus beatae atque dolor recusandae quod illum.</p>
+  </div>
+  <div>
+    <h3>Selam</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium minima delectus reiciendis, tempore quis ullam magnam molestiae quia explicabo non, sint deleniti repellendus beatae atque dolor recusandae quod illum.</p>
+  </div>
+  <div>
+    <h3>Selam</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium minima delectus reiciendis, tempore quis ullam magnam molestiae quia explicabo non, sint deleniti repellendus beatae atque dolor recusandae quod illum.</p>
+  </div>
+  <div>
+    <h3>Selam</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium minima delectus reiciendis, tempore quis ullam magnam molestiae quia explicabo non, sint deleniti repellendus beatae atque dolor recusandae quod illum.</p>
+  </div>
+ 
+   
+  <!-- <script>
+    const categoryList = document.querySelector(".category");
+    const arrow =document.querySelector("#arrow1");
+    const body = document.querySelector("body");
+  
+    //arrow da body'nin içinde
+    arrow.addEventListener("click", (event)=>{
+      categoryList.classList.toggle("open");
+      event.stopPropagation();
+    });
+    
+    body.addEventListener("click", ()=>{
+      categoryList.classList.remove("open");
+
+    }); -->
+  
+
+    <script>
+      const categoryList = document.querySelector(".category");
+      const dropdown = document.querySelector(".dropdown");
+      const arrow = document.querySelector("#arrow1");
+
+        arrow.addEventListener("click", (event) => {
+        categoryList.classList.toggle("open");
+        //arrowa tıklama yaptığında body üzerinde tıklamayı inaktif hale getiriyorum çünkü body'e her tıklama yaptığımda dropdown-list kapanacak.Bu kod arrowu body'den deaktif ediyor.
+        event.stopPropagation();
+      });
+  
+      document.body.addEventListener("click", () => {
+        categoryList.classList.remove("open");
+      });
+    </script>
+  
+    
+   
+    
+  
+</body>
+
+
+</html>

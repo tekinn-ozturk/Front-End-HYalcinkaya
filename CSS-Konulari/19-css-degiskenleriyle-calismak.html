@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root{
+      /* bu değişkenlere her yerden ulaşılabilir hale getirdik */
+      --bg-color: red;
+      --border-color: purple;
+    }
+
+
+    .box{
+      /*  css değişken isimlerini ben istediğim gibi verebiliyorum başında -- olması gerek */
+      /* Ayrıca bu değişkenler sadece box için geçerlidir scope dışında geçerli değildir. */
+      /* --bg-color: red;
+      --border-color: purple; */
+      width:600px;
+      background-color: var(--bg-color);
+      
+      border: solid 3px var(--border-color);
+      margin-bottom: 10px;
+      padding: 20px;
+
+    }
+
+    .box:hover{
+      background-color: var(--border-color);
+      border:solid 3px var(--bg-color)
+    }
+    .info{
+      background-color: var(--border-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam?</div>
+  <div class="box">Hic autem ea, nemo quidem aliquid saepe esse dolore placeat.</div>
+  <div class="box">Aliquam non, modi quae quia odio repudiandae voluptatem tempore facilis.</div>
+
+  <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto iure minus veniam qui culpa consectetur autem accusantium, quo dolores debitis quia repellendus vitae officia odit quidem aspernatur. Quam, autem!</div>
+</body>
+</html>

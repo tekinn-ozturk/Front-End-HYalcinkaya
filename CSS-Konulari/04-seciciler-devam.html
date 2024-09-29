@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    /* id > class > elemente seslenme*/
+
+    *{
+      /* yıldız sayfadaki tüm elementleri içerir */
+      background-color: bisque;
+    }
+    .container>.span-info{
+      background-color: blue;
+    }
+    .container>.container2>.span-info{
+      background-color: black;
+    }
+    h1,h2,h3{
+      background-color: red;
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+
+
+<body>
+  <h1>Herkese Selamlar!</h1>
+  <h2>Cümleten hayırlı akşamlar</h2>
+  <h3>İyi akşamlar arkadaşlar</h3>
+  <div class="container">
+    <div class="info">Lorem ipsum dolor sit amet consectetur.</div>
+
+   
+  </div>
+
+  <div class="container">
+    <span class="span-info">container'ın direkt içi</span>
+    <div class="container2"><span class="span-info">container içindeki div'in içi</span></div>
+  </div>
+</body>
+</html>

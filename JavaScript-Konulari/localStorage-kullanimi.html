@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width="device-width", initial-scale=1.0">
+  <title>localStorage ile çalışmak</title>
+</head>
+<body>
+  
+  <input type="color" name="color" id="color">
+  <button id="save">Kaydet</button>
+  <button id="show">Göster</button>
+  
+  <script>
+
+  const btn = document.querySelector("#save");
+
+  btn.addEventListener("click", ()=>{
+  const color = document.querySelector("#color");
+  localStorage.setItem("bgColor",color.value);
+  })
+
+
+  const btnShow = document.querySelector("#show");
+  // localStorage.setItem("bgColor",color.value);
+  btnShow.addEventListener("click", ()=>{
+  const colorCode = localStorage.getItem("bgColor")
+  console.log(colorCode);
+  document.body.style.backgroundColor=colorCode;
+  
+  })
+  
+
+  </script>
+</body>
+</html>

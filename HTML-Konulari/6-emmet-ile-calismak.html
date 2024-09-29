@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<body>
+    <!--
+        . --classes
+        # --id
+        > --İçinde
+        {} --içindeki yazıyı buraya yazıp TAB'larsan
+        + -- Kardeş
+        ^ --Üste Çık
+        lorem -> anlamsız kelimeler
+        * --x kadar çoğalt
+        () --grupla
+        $ -- sıralı işlem başlat
+        [] -- attribute
+    -->
+
+    <div class="">. + TAB'a basılarak class tag'i boş bir div oluşturulur.</div>
+    <!-- .container.bg-dark+TAB -->
+    <div class="container bg-dark"></div>
+
+<!-- ---------------------------------------------------------------- -->
+    <!-- id unique olmalıdır -->
+    <!-- #tcno1234 diyerek yazıldı. -->
+    <div id="tcno1234"></div>
+    <!-- .container.bg-dark#container+TAB diyerek yazıldı -->
+    <div class="container bg-dark" id="container"></div>
+
+    <!-- h2.container.bg-light.pt-2#first-class+TAB diyerek yazıldı -->
+    <h2 class="container bg-light pt-2" id="first-class"></h2>
+
+    <!-- h1>{içindeki yazi}+TAB diyerek oluşturuldu -->
+    <h1>içindeki yazı</h1>
+
+    <!-- ul>li+TAB diyerek açıldı -->
+    <ul>
+        <li></li>
+    </ul>
+<!-- ---------------------------------------------------------------- -->
+    <!-- h1+p+h1+TAB ie aynı hiyerarşide ögeleri açabiliriz -->
+    <h1></h1>
+    <p></p>
+    <h1></h1>
+
+<!-- ---------------------------------------------------------------- -->
+
+<!-- h1>{h1 içindeki yazi}^h2>{h2 içindeki yazı}^h1{2. h1'in içindeki yazı}+TAB ile yazılır. -->
+<h1>h1 içindeki yazi</h1>
+<h2>h2 içindeki yazı</h2>
+<h1>2. h1'in içindeki yazı</h1>          
+<!-- ---------------------------------------------------------------- -->
+<!-- lorem+TAB  -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quasi alias maxime eaque in reprehenderit ullam dolore, eius quos perferendis fugit? Nobis error, laboriosam aliquid ducimus voluptatibus assumenda expedita saepe.</p>
+
+<!-- lorem5+TAB -->
+ <p>Lorem ipsum dolor sit amet.</p>
+<!-- ---------------------------------------------------------------- -->
+<!-- ul>li*3 +TAB  -->
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!-- h1>lorem3^h2>lorem4^p*5>lorem10 +TAB  -->
+<h1>Lorem, ipsum dolor.</h1>
+<h2>Lorem ipsum dolor sit.</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, praesentium?</p>
+<p>Dolore ducimus hic doloribus a laboriosam, eos vitae in officiis.</p>
+<p>Voluptates repellat ducimus est ipsum architecto praesentium saepe minima nemo?</p>
+<p>Impedit hic quia at repellat magni, iusto suscipit provident nostrum.</p>
+<p>Maiores nostrum consequatur tempore aliquid modi, velit sed nesciunt? Tempore.</p>
+
+<ul>
+    <li>Lorem, ipsum dolor.</li>
+    <li>Iusto, ratione consequatur.</li>
+    <li>Possimus, molestiae id!</li>
+    <li>Impedit, ducimus eligendi!</li>
+    <li>Consequatur, sed ipsam!</li>
+</ul>
+<ul>
+    <li>Lorem, ipsum dolor.</li>
+    <li>Eveniet, non suscipit!</li>
+    <li>Quia, magnam tenetur.</li>
+    <li>Reprehenderit, beatae repellendus!</li>
+    <li>Ipsum, eaque quasi.</li>
+</ul>
+<ul>
+    <li>Lorem, ipsum dolor.</li>
+    <li>Alias, veritatis tenetur?</li>
+    <li>Quam, nemo nulla?</li>
+    <li>Molestiae, iusto similique.</li>
+    <li>Quis, sequi dolor.</li>
+</ul>
+<!-- ---------------------------------------------------------------- -->
+<!-- h1 class title olsun, h2 class subtitle ve 3 paragraf içinde lorem , 2 ul içinde yine .item class bilgisi olan 5 li olsun. -->
+
+<!-- h1.title^h2.sub-title^p*4>lorem9^ul*2>li*5.item>{item} -->
+
+<!-- h1.title+h2.sub-title+p*3>lorem9+ul*2>li*5.item>{item} -->
+    <h1 class="title"></h1>
+    <h2 class="sub-title"></h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit?</p>
+    <p>Officia reiciendis minus magni odit fugit perferendis ea tenetur?</p>
+    <p>Deleniti, quas. Sint consequatur neque tempora iure laboriosam. Beatae.</p>
+    <p>Sit nihil dolorem similique animi aspernatur recusandae voluptates laudantium!</p>
+    <ul>
+        <li class="item">item</li>
+        <li class="item">item</li>
+        <li class="item">item</li>
+        <li class="item">item</li>
+        <li class="item">item</li>
+    </ul>
+    <ul>
+        <li class="item">item</li>
+        <li class="item">item</li>
+        <li class="item">item</li>
+        <li class="item">item</li>
+        <li class="item">item</li>
+    </ul>
+
+<!-- ------------------------------------------------------------- -->
+<h1 class="title"></h1>
+<h2 class="sub-title"></h2>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium.</p>
+<p>Deleniti, architecto suscipit. Officia recusandae harum nobis temporibus a?</p>
+<p>Delectus quidem tempore explicabo voluptas sunt odit repellendus neque.</p>
+<p>Possimus, cumque saepe veniam quas rem optio atque explicabo!</p>
+<ul>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+</ul>
+<ul>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+</ul>
+<h2 class="sub-title"></h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos!</p>
+<p>Quo nemo adipisci voluptates veniam mollitia repudiandae modi placeat.</p>
+<p>Corporis adipisci reiciendis magnam quisquam nihil nam, molestiae nulla.</p>
+<p>Vitae sapiente excepturi illo aperiam maxime rem. Velit, ipsa.</p>
+<ul>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+</ul>
+<ul>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+    <li class="item">item</li>
+</ul>
+<!-- ---------------------------------------------------------------- -->
+<!-- ul>li*3#class-$>{item$} +TAB -->
+<ul>
+    <li id="class-1">item1</li>
+    <li id="class-2">item2</li>
+    <li id="class-3">item3</li>
+</ul>
+<!-- ---------------------------------------------------------------- -->
+<!-- p[title="info"]>lorem3 -->
+<p title="info">Lorem, ipsum dolor.</p>
+
+
+<!-- img[src="http//"]*2 -->
+<img src="http//" alt=""><img src="http//" alt="">
+
+</body>
+</html>

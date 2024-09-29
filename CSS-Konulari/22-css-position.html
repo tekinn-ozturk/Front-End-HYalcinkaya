@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root{
+  --green: #2ecc71;
+  --blue: #3498db;
+  --yellow: #f1c40f;
+  --red: #e74c3c;
+  --dark-blue: #34495e;
+  --midnight-blue:#2c3e50;
+  --light-white: #ecf0f1;
+  --silver: #bdc3c7;
+    }
+    nav{
+      padding: 20px;
+      border-bottom: 2px solid blue;
+      background-color: var(--dark-blue);
+      color:antiquewhite;
+      height: 10px;
+      /* width: 100%; */
+      position: sticky;
+      top:10px;
+      z-index: 1;
+      
+      
+    }
+    .navbar{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+    }
+    .navbar>li{
+      float:left;
+      margin-right: 10px;
+    }
+
+    .clear-fix{
+      clear:both;
+    }
+    .box, .parent{
+      padding: 20px;
+    }
+    .parent{
+      background-color: red;
+    }
+    .box-1{
+      background-color: var(--blue);
+      position: relative;
+      top:40px;
+      left:100px;
+    }
+    .box-2{
+      background-color: var(--green);
+      position: absolute;
+      margin-left: 20px;
+    }
+    .box-3{
+      /* default'ta static */
+      position: static;
+      background-color: var(--midnight-blue);
+    }
+    .box-4{
+      /* position: fixed; */
+      background-color: var(--yellow);
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+
+  <nav class="" id="">
+    <ul class="navbar">
+      <li>Lorem.</li>
+      <li>Iusto!</li>
+      <li>Illum.</li>
+      <li>Odit!</li>
+      <li>Quibusdam.</li>
+    </ul>
+  </nav>
+  <div class="clear-fix"></div>  
+  <!-- .parent>.box.box-$*4>{box $} -->
+  <div class="parent">
+    <div class="box box-1">box 1</div>
+    <div class="box box-2">box 2</div>
+    <div class="box box-3">box 3</div>
+    <div class="box box-4">box 4</div>
+  </div>
+
+  <div class="container">
+    <article>
+      <h2>article 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, deleniti!</p>
+      <p>Fuga tempore illo dolorum iusto! Veniam perferendis voluptatem repudiandae hic.</p>
+      <p>Numquam nulla recusandae deleniti, dignissimos sit aut saepe ipsa id.</p>
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Vitae, aperiam natus?</li>
+        <li>Dolor, dolores perspiciatis!</li>
+        <li>Sit, culpa ullam.</li>
+        <li>Cum, provident sed.</li>
+        <li>Aut, omnis amet.</li>
+        <li>Voluptate, recusandae fugit.</li>
+        <li>Dolorum, amet aperiam.</li>
+        <li>In, at possimus?</li>
+        <li>Autem, odio sunt?</li>
+        <li>Expedita, neque fugiat.</li>
+        <li>Expedita, repellat hic!</li>
+        <li>Aspernatur, eius quos.</li>
+        <li>Itaque, corrupti architecto?</li>
+        <li>Eos, reiciendis minima!</li>
+        <li>Aspernatur, blanditiis itaque.</li>
+        <li>Temporibus, assumenda vero?</li>
+        <li>Dolorem, magni magnam!</li>
+        <li>Velit, culpa. Delectus.</li>
+        <li>Aliquam, alias veniam.</li>
+        <li>Corporis, aspernatur ipsum.</li>
+        <li>Culpa, deleniti accusantium.</li>
+        <li>Saepe, molestiae tenetur!</li>
+        <li>Odio, eum autem.</li>
+        <li>Ducimus, alias mollitia?</li>
+        <li>Vel, hic et!</li>
+        <li>Harum, quo dolores?</li>
+        <li>Nam, odit beatae.</li>
+        <li>Dignissimos, ullam laudantium.</li>
+        <li>Cupiditate, esse officiis.</li>
+        <li>Nemo, laudantium dicta!</li>
+        <li>Ab, accusantium non?</li>
+        <li>Dolorem, ipsum explicabo.</li>
+        <li>Velit, non sit!</li>
+        <li>Facere, incidunt nam!</li>
+        <li>Eaque, facilis maxime.</li>
+        <li>Labore, aspernatur magnam.</li>
+        <li>Iusto, ad mollitia.</li>
+        <li>Eos, reprehenderit necessitatibus.</li>
+        <li>Eos, deleniti mollitia?</li>
+      </ul>
+    </article>
+
+    <article>
+      <h2>article 2</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, minima?</p>
+      <p>Atque totam ex suscipit alias deserunt, delectus saepe adipisci aliquid?</p>
+      <p>Facere a molestiae ipsum repellendus impedit ullam dolores eaque sunt.</p>
+    </article>
+
+    <article>
+      <h2>article 3</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, minima?</p>
+      <p>Atque totam ex suscipit alias deserunt, delectus saepe adipisci aliquid?</p>
+      <p>Facere a molestiae ipsum repellendus impedit ullam dolores eaque sunt.</p>
+    </article>
+
+    <article>
+      <h2>article 4</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, minima?</p>
+      <p>Atque totam ex suscipit alias deserunt, delectus saepe adipisci aliquid?</p>
+      <p>Facere a molestiae ipsum repellendus impedit ullam dolores eaque sunt.</p>
+    </article>
+
+    <article>
+      <h2>article 5</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, minima?</p>
+      <p>Atque totam ex suscipit alias deserunt, delectus saepe adipisci aliquid?</p>
+      <p>Facere a molestiae ipsum repellendus impedit ullam dolores eaque sunt.</p>
+    </article>
+  </div>
+
+</body>
+</html>

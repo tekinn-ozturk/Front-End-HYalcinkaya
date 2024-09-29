@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <style>
+    .flex-container{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      height: 100vh;
+    }
+
+    .item{
+      background-color: lightgray;
+
+    }
+    
+    .navbar-item-container{
+      display: flex;
+      justify-content: flex-end;
+      
+    }
+    .navbar-item{
+      margin:10px;
+    }
+
+    #buttonT{
+      background-color: #876464; 
+      width: 25px;
+      height: 25px;
+      border-radius: 20px;
+      text-align: center;
+      line-height: 25px; /* Harfi tam ortala */
+    }
+
+    .content-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20%;
+      
+    }
+
+    .content-item{
+      width: 600px;
+      
+      
+    }
+
+    #search{
+      border-radius: 20px;
+      height: 30px;
+      border: 1px solid lightgrey;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #addButton{
+      width:60px;
+      height:60px;
+      border-radius: 30px;
+      margin-top: 20px;
+      border: 1px solid white;
+      background-color:#B9D9EB;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item">
+      <div class="navbar-item-container">
+    <a class="navbar-item">Gmail</a>
+    <a class="navbar-item">Görsel</a>
+    <a class="navbar-item" id="buttonT">T</a>
+  </div>
+    </div>
+    <div class="content">
+      <div class="content-container">
+      <h1 class="content-item">Google</h1>
+      <input id="search" class="content-item" type="text" placeholder="Google'da arayın veya URL'yi yazın">
+      <button id="addButton" class="content-item">+</button>
+    </div>
+
+    </div>
+    <div class="item">Excepturi!</div>
+  </div>
+</body>
+</html>

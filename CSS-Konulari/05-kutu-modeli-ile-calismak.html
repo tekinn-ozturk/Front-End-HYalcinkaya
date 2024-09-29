@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- width ve height bilgileri block elementleri için geçerlidir. -->
+  <style>
+    .box{
+      width: 400px;
+      background-color: red;
+      /* display: block;  */
+      /* div'ler zaten default'ta block element bu sebeple display: block komutu hiç bir işe yaramaz! */
+      /* display: inline-block;  */
+      /* div elementini yarı block elemente çevirir. */
+
+    }
+
+    .span-box{
+      width: 400px;
+      background-color: yellow;
+      /* span elementine istediğin kadar width ver sadece içeriği kadar yer kaplar. Ancak bunun bir istisnası var -> display: block yaparsan spani  */
+      /* display: inline-block ile width özelliğini alarak yarı-block element haline gelir.İNline nasıldı içerdiği şey kadar alan kaplar. */
+    }
+    .span-info{
+      background-color:chocolate;
+      width:200px;
+      display:inline-block;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="box">Lorem, ipsum dolor.</div>
+  <div class="box">Illo, a harum.</div>
+  <div class="box">Dolores, ducimus consequatur.</div>
+
+  <span class="span-box">Lorem, ipsum dolor.</span>
+  <span class="span-box">Molestiae, assumenda fugiat?</span>
+  <span class="span-box">Porro, sit illum?</span>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil amet ex eum, ut error, animi maxime accusamus veritatis saepe ipsum aliquam <span class="span-info">praesentium modi provident magnam.</span> Libero, aspernatur voluptas accusantium pariatur animi saepe, aperiam delectus repellendus nemo deserunt quos! Obcaecati, provident ut culpa praesentium laboriosam corporis ipsa vel? Voluptate magnam veniam deleniti. Iure deserunt laudantium sapiente, vitae eligendi fuga possimus voluptatibus consequatur nisi modi inventore earum dolor neque voluptates consequuntur facere aliquid sequi ullam placeat quae libero. Aliquid explicabo nisi perspiciatis temporibus velit voluptatum nam delectus voluptas culpa? Nihil quisquam iusto eum ipsum veniam, tempore at ipsam libero quia accusantium quasi.</p>
+</body>
+</html>

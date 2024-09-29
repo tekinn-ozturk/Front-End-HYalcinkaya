@@ -1,0 +1,168 @@
+/*
+- Mobile: 375px
+- Desktop: 1440px */
+/*
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700, 800  */
+
+html {
+  font-size: 15px;
+}
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish--blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:"Inter",sans-serif ;
+  background: var(--off-white);
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+
+nav>ul>li>a:hover{
+  text-decoration: underline;
+}
+nav {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+}
+.container>section{
+
+  flex: 2;
+  
+}
+
+.w-100{
+width:100%;
+}
+
+.info{
+  display:flex;
+  gap:10px;
+}
+
+.info> .item{
+  /* iki iteminde aynı boyutlarda olmasını sağlar */
+  flex:1;
+}
+
+.info h1{
+  font-size: 3rem;
+  margin-top:20px;
+}
+
+.item-detail{
+  /* display:flex; */
+  /* flex-direction: column; */
+  margin-top: 10px;
+}
+
+.item-detail>a{
+margin-top: 30px;
+background-color: var(--soft-red);
+display: inline-block;
+color: var(--off-white);
+text-decoration: none;
+padding: 15px 40px;
+}
+
+.container > aside{
+  flex:1;
+  padding: 20px;
+  background: var(--very-dark-blue);
+}
+
+.container>aside>h2{
+  margin-top: 10px;
+  color: var(--soft-orange);
+  font-size:2rem;
+}
+
+.container aside h3 {
+  color:var(--off-white);
+}
+
+.container aside p{
+  color:var(--grayish--blue)
+}
+
+aside>.item{
+  margin-bottom: 20px;
+  
+}
+
+.border{
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+footer.container{
+  gap:0px;
+}
+footer.container>.item{
+  /* padding: 20px; */
+  flex:1;
+  display:flex;
+  /* background-color: red; */
+}
+
+footer.container>.item>img{
+  width:100px;
+  max-height: 120px;
+
+}
+
+footer.container>.item>div{
+  flex:2;
+  padding: 0 20px;
+}
+
+footer.container> .item h3{
+  color: var(--grayish--blue);
+  margin: 0;
+}
+
+footer.container> .item h4{
+  color: var(--very-dark-blue);
+  margin: 10px 0 0;
+}
+
+footer.container> .item p{
+  color: var(--very-dark-blue);
+}

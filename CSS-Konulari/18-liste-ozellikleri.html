@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+    }
+    .box{
+      margin: 20px auto 0;
+      /* auto yatayda ortalanmasını sağlıyor */
+      width:600px;
+    }
+
+    .box> p {
+      margin:30px 0;
+      
+    }
+
+    .mb-10{
+      margin-bottom: 10px;
+    }
+
+    ul{
+      /* li elemanlarının başındaki semboller ile ilgili işlemler */
+      list-style: none;
+      padding: 0;
+    }
+
+    ol{
+
+      list-style: decimal-leading-zero;
+    }
+
+    .nav>li{
+      float:left;
+      margin-right: 10px;
+    }
+
+    .nav-2> li:hover {
+        background-color: gray;
+    }
+    
+    .nav-2> li>a{
+      display: block;
+    }
+
+    .clear-fix{
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quisquam optio sed libero necessitatibus obcaecati sint quibusdam iste sequi, deserunt, vero aspernatur consequatur dolore illum quae at nemo aperiam eum?</p>
+    <ul class="mb-10 nav-2">
+      <li><a href="https://www.google.com">Lorem.</a></li>
+      <li><a href="https://www.google.com">Ad.</a></li>
+      <li><a href="https://www.google.com">Vitae.</a></li>
+      <li><a href="https://www.google.com">Expedita.</a></li>
+      <li><a href="https://www.google.com">Libero?</a></li>
+    </ul>
+
+    <ul class="mb-10 nav" >
+      <li>Lorem, ipsum.</li>
+      <li>Deleniti, ullam!</li>
+      <li>Corrupti, maiores!</li>
+      <li>Officiis, eum.</li>
+      <li>Incidunt, ducimus?</li>
+    </ul>
+    <div class="clear-fix"></div>
+    <ul class="mb-10" >
+      <li><a href="">Lorem, ipsum dolor.</a></li>
+      <li><a href="">Blanditiis, aliquam nulla.</a></li>
+      <li><a href="">Sapiente, cumque nemo.</a></li>
+      <li><a href="">Laboriosam, voluptates dolorem.</a></li>
+      <li><a href="">Voluptatem, dolorem hic?</a></li>
+    </ul>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quisquam optio sed libero necessitatibus obcaecati sint quibusdam iste sequi, deserunt, vero aspernatur consequatur dolore illum quae at nemo aperiam eum?</p>
+    <ol>
+      <li>Lorem, ipsum.</li>
+      <li>Suscipit, asperiores.</li>
+      <li>Aperiam, ut.</li>
+      <li>Fugiat, sint.</li>
+      <li>Illo, quis?</li>
+    </ol>
+  </div>
+</body>
+</html>

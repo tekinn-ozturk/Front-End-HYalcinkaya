@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+            :root {
+              --green: #2ecc71;
+              --blue: #3498db;
+              --yellow: #f1c40f;
+              --red: #e74c3c;
+              --dark-blue: #34495e;
+              --midnight-blue: #2c3e50;
+              --light-white: #ecf0f1;
+              --silver: #bdc3c7;
+            }
+            *{
+              margin: 0;
+              padding: 0;
+            }
+            .box{
+              background-color: var(--yellow);
+              padding: 100px;
+            }
+      @media (max-width: 575px) {
+        .box{
+          background-color: bisque
+        }
+        nav>ul>li{
+      list-style: none;
+      margin-left:10px;
+      float: left;
+      
+    }
+      }
+      /* Small devices (landscape phones, 576px and up) */
+      @media (min-width: 576px) {
+        .box{
+          background-color: #2ecc71;
+        }
+        
+        nav>ul>li{
+      list-style: none;
+      margin-left:10px;
+      float: right;
+      
+    }
+       }
+
+       /* Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+        .box{
+          background-color: purple;
+          color: antiquewhite;
+        }
+       }
+
+      /* Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+
+       }
+
+       /* X-Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) {
+
+       }
+
+       /* XX-Large devices (larger desktops, 1400px and up) */
+      @media (min-width: 1400px) {
+
+      }
+
+
+
+          .clear-fix{
+            clear:both;
+          }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Lorem.</a></li>
+        <li><a href="">Nisi.</a></li>
+        <li><a href="">Quod?</a></li>
+        <li><a href="">Amet!</a></li>
+        <li><a href="">Asperiores!</a></li>
+      </ul>
+    </nav>
+    <div class="clear-fix"></div>
+    <h1 id="media-size"></h1>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, recusandae!
+    </div>
+    <script>
+      const mediaSizeContainer = document.querySelector("#media-size");
+      mediaSizeContainer.innerHTML = document.body.clientWidth;
+      addEventListener("resize", (event) => {
+        mediaSizeContainer.innerHTML = document.body.clientWidth;
+      });
+    </script>
+  </body>
+</html>

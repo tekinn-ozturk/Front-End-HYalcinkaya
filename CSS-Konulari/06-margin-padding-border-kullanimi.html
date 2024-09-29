@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .box{
+      width: 400px;
+      min-height: 100px; /*kutunun içeriği boş olsa bile minimum 100px olacak ancak kutunun içeriği 100px'e sığmaz ise istediği kadar uzayabilir.*/
+      /* background-color: blue; */
+
+      border: 10px solid red; /*kutular browserda 460:160 px gözüküyor sebebi 400anahat+20paddingAlt+20paddingÜst+10borderAlt+10borderÜst)*/
+
+      margin-bottom:30px ; /*kutuların birbirine uzaklığı*/
+      margin: 15px 0 0 15px ; /*12-3-6-9 yönü*/
+
+      /* margin:30px 0; üst ve alttan 30px lik boşluk sağ ve soldan boşluk yok */
+      
+      padding:20px; /* içeriğin çerçeveye uzaklığı*/
+      padding: 15px 0 0 15px ; /*12-3-6-9 yönü*/
+
+      box-sizing: border-box; /*width ve height ne verdiysen onu ayarlıyor padding ve border olsa bile tabi min-height/width ve max-height/width ile çalışırsan onların uzamasına karışamaz.*/
+
+      border-radius: 30px; /*border ın köşelerini yuvarlatıyor*/
+    }
+
+    /* son kutuya seslendik */
+    .box:last-of-type{
+      margin-bottom: 0; 
+      /* son kutuda margin özelliği olmasını istemedik */
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam distinctio reprehenderit non dolores reiciendis, necessitatibus, dignissimos voluptate dolorum, consectetur id laborum nihil. Aliquid error provident, commodi aut, ut fugiat delectus nostrum ab eaque esse odio nesciunt veritatis facere molestiae molestias, repudiandae beatae saepe fuga temporibus necessitatibus non totam itaque modi amet! Neque dolores ipsa nisi unde inventore explicabo praesentium dolorum aut suscipit optio rem quisquam, repudiandae in ipsum atque.</div>
+  <div class="box">Similique praesentium eius illum neque ratione, et pariatur ducimus labore?</div>
+  <div class="box">Repudiandae fugiat esse vero fuga excepturi veritatis, officia neque corporis!</div>
+  <div class="box">Minus beatae expedita in. Reprehenderit aut facere pariatur corporis temporibus.</div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, possimus!</p>
+</body>
+</html>

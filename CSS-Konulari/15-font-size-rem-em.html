@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+      
+      /* 1rem=16px default ayarı ancak bunu değiştirebilirsin.Örneğin root'a seslenerek(html) font-size'ı 10 px olarak ver ve artık 1rem=10px oldu */
+  
+    html{
+      font-size: 10px;
+      /* default ayarı değiştirdik. 16px'den 10px'e düşürdük. */
+    }
+    .hero{
+      font-size: 3rem;
+      width: 600px;
+      margin: auto;
+      padding: 40px;
+      background-color: antiquewhite;
+    }
+    
+    main{
+      font-size: 3em;
+      /* em çarpan gibi düşünebiliriz bir önceki kutunun büyüklğünün üzerine çarpan olarak eklenir. */
+      /* h1'in useragent ayarından dolayı defaultta 2 rem'i var zaten e hesaplayalım 2remx3emx10px=60px olmalı main içindeki h1'in boyutu*/
+    }
+    </style>
+  <title>Document</title>
+</head>
+<body>
+  <p class="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt omnis sequi beatae expedita iusto quae consequatur enim sint in?</p>
+
+  <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt omnis sequi beatae expedita iusto quae consequatur enim sint in?</p>
+
+  <div class="hero">
+    <h1>Hero</h1>
+    <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo atque deserunt repellat iste mollitia dolores, aperiam nostrum cumque accusamus cum.</p>
+  </div>
+    <br>
+  <main class="">
+    <h1>Main-Hero</h1>
+    <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo atque deserunt repellat iste mollitia dolores, aperiam nostrum cumque accusamus cum.</p>
+  </main>
+</body>
+</html>
